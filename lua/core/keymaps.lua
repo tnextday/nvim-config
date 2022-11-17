@@ -22,12 +22,15 @@ vim.keymap.set('n', '<leader>vd', set_bg_dark)
 vim.keymap.set('n', '<leader>', ':')
 -- f: file tree
 vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
-vim.keymap.set('n', '<leader>ft', ':NvimTreeToggle<cr>')
-vim.keymap.set('n', '<leader>ff', ':NvimTreeFocus<cr>')
+vim.keymap.set('n', '<leader>et', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>ee', ':NvimTreeFocus<cr>')
 -- y: telescope
 vim.keymap.set('n', '<F9>', function() require 'telescope.builtin'.find_files {} end)
+vim.keymap.set('n', '<leader>ff', function() require 'telescope.builtin'.find_files {} end)
 vim.keymap.set('n', '<F10>', function() require 'telescope.builtin'.git_files {} end)
+vim.keymap.set('n', '<leader>fg', function() require 'telescope.builtin'.git_files {} end)
 vim.keymap.set('n', '<F11>', function() require 'telescope.builtin'.buffers {} end)
+vim.keymap.set('n', '<leader>fb', function() require 'telescope.builtin'.buffers {} end)
 vim.keymap.set({ 'n', 'i' }, '<C-p>', function() require 'telescope.builtin'.registers {} end)
 -- w: window
 vim.keymap.set('n', '<leader>w1', '<c-w>o')

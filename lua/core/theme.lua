@@ -46,14 +46,16 @@
 --vim.cmd("colorscheme kanagawa")
 
 -- edge
-vim.g.edge_style = 'neon' -- neon, aura
-vim.g.edge_better_performance = 1
-vim.cmd("colorscheme edge")
+-- vim.g.edge_style = 'neon' -- neon, aura
+-- vim.g.edge_better_performance = 1
+-- vim.cmd("colorscheme edge")
 
 -- github
--- vim.cmd("colorscheme github_dark_default")
+-- vim.cmd("colorscheme enfocado")
 
--- oxocarbon
--- vim.cmd("colorscheme oxocarbon-lua")
 
-vim.cmd("set background=dark")
+-- vim.cmd("set background=dark")
+
+vim.o.background = 'light'
+
+vim.cmd("colorscheme vscode")

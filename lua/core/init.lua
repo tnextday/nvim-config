@@ -54,6 +54,9 @@ require('image').setup {
 require("impatient")
 --require('satellite').setup()
 
+-- config leap
+require('leap').add_default_mappings()
+
 require("configs.autocomplete").config()
 require("configs.symbols_outline").config()
 require("configs.statusline").config()

@@ -16,8 +16,6 @@ return require('packer').startup(function()
 	use 'moll/vim-bbye' -- for more sensible delete buffer cmd
 
 	-- themes (disabled other themes to optimize startup time)
-	use 'sainnhe/sonokai'
-	use 'tiagovla/tokyodark.nvim'
 	use 'projekt0n/github-nvim-theme'
 	-- use 'joshdick/onedark.vim'
 	-- use { 'catppuccin/nvim', as='catppuccin' }
@@ -25,13 +23,12 @@ return require('packer').startup(function()
 	-- use 'liuchengxu/space-vim-dark'
 	-- use 'ahmedabdulrahman/aylin.vim'
 	-- use "rebelot/kanagawa.nvim"
-	use 'NLKNguyen/papercolor-theme'
-	use 'liuchengxu/space-vim-dark'
 	use 'sainnhe/edge'
-	use 'B4mbus/oxocarbon-lua.nvim'
 	use 'Th3Whit3Wolf/one-nvim'
+    use 'wuelnerdotexe/vim-enfocado'
+    use 'Mofiqul/vscode.nvim'
 
-	-- file tree
+    -- file tree
 	use {
 		'kyazdani42/nvim-tree.lua',
 		requires = 'kyazdani42/nvim-web-devicons'
@@ -85,5 +82,11 @@ return require('packer').startup(function()
 
     -- decorated scrollbar
     --use 'lewis6991/satellite.nvim'
+
+    -- which key
+    use "folke/which-key.nvim"
+
+    -- leap 
+    use "ggandor/leap.nvim"
 
 end)
